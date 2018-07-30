@@ -2,6 +2,7 @@ package com.my.designpattern.strategy.pay;
 
 import com.my.designpattern.strategy.pay.service.AliPay;
 import com.my.designpattern.strategy.pay.service.PayState;
+import com.my.designpattern.strategy.pay.service.PayType;
 import com.my.designpattern.strategy.pay.service.Payable;
 
 public class Order   {
@@ -48,7 +49,7 @@ public class Order   {
                 '}';
     }
 
-    public PayState pay(Payable payable) {
-        return payable.pay(uid,amount);
+    public PayState pay(PayType payType) {
+        return payType.getPayable().pay(uid,amount);
     }
 }
