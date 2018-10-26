@@ -8,5 +8,14 @@
     <artifactId>design-pattern-filter</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-servlet-api -->
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-servlet-api</artifactId>
+            <version>8.5.23</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
